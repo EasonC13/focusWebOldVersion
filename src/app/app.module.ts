@@ -30,6 +30,7 @@ import { TablesComponent } from "./ui-elements/tables/tables.component";
 import { TabsComponent } from "./ui-elements/tabs/tabs.component";
 import { TooltipsComponent } from "./ui-elements/tooltips/tooltips.component";
 import { TypographyComponent } from "./ui-elements/typography/typography.component";
+import { FocusComponent } from './focus/focus.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { TypographyComponent } from "./ui-elements/typography/typography.compone
     ProgressbarComponent,
     TablesComponent,
     TooltipsComponent,
-    TypographyComponent
+    TypographyComponent,
+    FocusComponent
   ],
   imports: [
     BrowserModule,
