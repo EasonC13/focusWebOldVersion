@@ -1,1 +1,20 @@
 <p>focus works!</p>
+
+<div class="cont d-flex justify-content-center align-items-center flex-column">
+
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" (change)="fileChange($event)">
+        <label class="custom-file-label">Select File</label>
+    </div>
+  
+    <div *ngIf="loading">
+        <div>Still Loading</div>
+    </div>
+  
+    <div class="list-group">
+        <div class="list-group-item" *ngFor="let item of predictions">
+            {{item.className}} - {{item.probability | percent}}
+        </div>
+    </div>
+  
+  </div>
